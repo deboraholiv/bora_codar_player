@@ -1,0 +1,111 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            purple95: '#2a2141',
+            white05: '##e1e1e6',
+            white10: '#d9d9d999',
+            white15: '#d9d9d929'
+          },
+          padding: {
+            '38px': '38px',
+            '29px': '30px'
+          },
+          margin: {
+            '29px': '29px'
+          }
+        }
+      }
+    }
+  </script>
+  <title>Document</title>
+</head>
+<body>
+   <div class="grid grid-flow-col gap-8" >
+    <div class="w-80 bg-purple95 row-span-3 rounded-lg">
+      <div class="p-[38px] flex flex-col justify-center content-center">
+        <img class="mb-[29px]" src="./src/hans-eiskonen-8Pm_A-OHJGg-unsplash1.png" alt="Capa album com imagem abstrata da banda rocketseat">
+        <div class="content-text mb-[29px]">
+          <h1 class="font-bold text-2xl leading-10 cursor-default" >Acorda Devinho</h1>
+          <p class="text-xl font-normal brightness-75 cursor-pointer hover:underline" >Banda rocketseat</p>
+        </div>
+        <div class="flex flex-row justify-between mb-[29px]">
+          <i class="fa fa-backward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+          <i class="fa fa-play fa-2x hover:cursor-pointer" aria-hidden="true"></i> 
+          <!-- <i class="fa fa-pause fa-2x hover:cursor-pointer" aria-hidden="true"></i> -->
+          <i class="fa fa-forward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+        </div>
+        <div class="w-full">
+          <div class="w-full bg-white10 rounded-full h-1.5 mb-2 dark:bg-white15">
+            <div class="bg-white10 h-1.5 rounded-full dark:bg-white10" style="width: 45%"></div>
+          </div>
+          <div class="flex flex-row justify-between brightness-75">
+            <span id="current-time" class="time">1:20</span>
+            <span id="duration" class="time">3:20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-120 bg-purple95 row-span-2 col-span-2 rounded-lg">
+      <div class="p-[29px]">
+        <!-- info album -->
+        <div class="flex flex-row justify-start items-center gap-6">
+          <img class="mb-[29px] w-24" src="./src/hans-eiskonen-8Pm_A-OHJGg-unsplash1.png" alt="Capa album com imagem abstrata da banda rocketseat">
+          <div class="content-text mb-[29px]">
+            <h1 class="font-bold text-2xl leading-10 cursor-default" >Acorda Devinho</h1>
+            <p class="text-xl font-normal brightness-75 cursor-pointer hover:underline" >Banda rocketseat</p>
+          </div>
+        </div>
+        <!-- controles -->
+        <div class="flex flex-row justify-around mb-[29px]">
+          <i class="fa fa-backward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+          <i class="fa fa-play fa-2x hover:cursor-pointer" aria-hidden="true"></i> 
+          <!-- <i class="fa fa-pause fa-2x hover:cursor-pointer" aria-hidden="true"></i> -->
+          <i class="fa fa-forward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+        </div>
+        <!-- progress bar -->
+        <div class="w-full">
+          <div class="w-full bg-white10 rounded-full h-1.5 mb-2 dark:bg-white15">
+            <div class="bg-white10 h-1.5 rounded-full dark:bg-white10" style="width: 45%"></div>
+          </div>
+          <div class="flex flex-row justify-between brightness-75">
+            <span id="current-time" class="time">1:20</span>
+            <span id="duration" class="time">3:20</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w-120 bg-purple95 col-span-2 rounded-lg">
+      <div class="p-[29px]">
+        <!-- info album -->
+        <div class="flex flex-row justify-start items-center gap-6 mb-[29px]">
+          <img class="w-24" src="./src/hans-eiskonen-8Pm_A-OHJGg-unsplash1.png" alt="Capa album com imagem abstrata da banda rocketseat">
+          <div class="content-text mb-[29px]">
+            <h1 class="font-bold text-2xl leading-10 cursor-default" >Acorda Devinho</h1>
+            <p class="text-xl font-normal brightness-75 cursor-pointer hover:underline" >Banda rocketseat</p>
+          </div>
+        </div>
+        <!-- controles -->
+        <div class="flex flex-row justify-around">
+          <i class="fa fa-backward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+          <i class="fa fa-play fa-2x hover:cursor-pointer" aria-hidden="true"></i> 
+          <!-- <i class="fa fa-pause fa-2x hover:cursor-pointer" aria-hidden="true"></i> -->
+          <i class="fa fa-forward fa-2x brightness-75 hover:cursor-not-allowed" aria-hidden="true"></i>
+        </div>
+      </div>
+    </div>
+
+   </div>
+</body>
+</html>
